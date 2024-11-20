@@ -43,7 +43,6 @@ section{
 
 
 h1, h2, h3{
-    font-family: "unbounded";
     font-weight: bold;
     color: var(--primary);
     text-align: center;
@@ -51,13 +50,15 @@ h1, h2, h3{
 }
 
 h1{
-    font: 30px/40px "unbounded", Arial;
+    font:30px/40px "unbounded", Arial;
+    font-weight: bold;
     margin-bottom: 30px;
 }
 
 
 h2{
     font: 30px "unbounded", Arial;  
+    font-weight: bold;
 }
 
 h2.lg{
@@ -139,45 +140,13 @@ i{
     min-height: 20px;
 
     &.arrow{
-        background-image: url("assets/icons/arrow.svg");
+        background-image: url("/assets/icons/arrow.svg");
     }
 
-    // &.brandIdentity{
-    //     background-image: url("/assets/icons/brand\ identity.svg");
-    // }
-    // &.socialMedia{
-    //     background-image: url("/assets/icons/social\ media\ marketing.svg");
-    // }
     &.navMenu{
-        background-image: url("assets/icons/nav\ menu.svg");
+        background-image: url("/assets/icons/nav\ menu.svg");
     }
-    // &.contentCreation{
-    //     background-image: url("/assets/icons/");
-    // }
-    // &.digitalAdvertising{
-    //     background-image: url("/assets/icons/digital\ advertising.svg");
-    // }
-    // &.seo{
-    //     background-image: url("/assets/icons/search\ engine\ optimization\(seo\).svg");
-    // }
-    // &.sem{
-    //     background-image: url("/assets/icons/search\ engine\ marketing.svg");
-    // }
-    // &.contentCreation{
-    //     background-image: url("/assets/icons/content\ creation.svg");
-    // }
-    // &.webDesign{
-    //     background-image: url("/assets/icons/website\ development.svg");
-    // }
-    // &.graphicDesign{
-    //     background-image: url("/assets/icons/graphic\ design.svg");
-    // }
-    // &.ooh{
-    //     background-image: url("/assets/icons/out\ of\ home\ advertising\ \(OOH\).svg");
-    // }
-    // &.printAdvertising{
-    //     background-image: url("/assets/icons/print\ advertising.svg");
-    // }
+
 
 }
 
@@ -494,14 +463,6 @@ z-index: -1;
 
 }
 
-div.swiper-wrapper{
-    width: 600px;
-    height: 250px;
-    text-align: center;
-    h3{
-        text-align: center !important;
-    }
-}
 
 // Services section
 #services ul{
@@ -595,6 +556,15 @@ div.swiper-wrapper{
 .swiper-pagination{
     // position: static;
     // bottom: ;
+}
+
+div.swiper-wrapper{
+    width: 600px;
+    height: 250px;
+    text-align: center;
+    h3{
+        text-align: center !important;
+    }
 }
 
 // contact us
