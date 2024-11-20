@@ -23,13 +23,13 @@ window.onload = function name() {
         });
     });
 
-    // const swiper = new Swiper(".swiper", {
-    //     direction: 'horizontal',
-    //     loop: false,
-    //     pagination:{
-    //         el: ".swiper-pagination"
-    //     }
-    // });
+    const swiper = new Swiper(".swiper", {
+        direction: 'horizontal',
+        loop: false,
+        pagination:{
+            el: ".swiper-pagination"
+        }
+    });
 
     gsap.from("#heroSection h1, #heroSection p, #heroSection .btn", {
         y: 100,
@@ -40,14 +40,6 @@ window.onload = function name() {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    // gsap.from(".VLine", {
-    //     opacity: 0,
-    //     duration: 2,
-    //     scrollTrigger: {
-    //         triggger: "#heroSection",
-    //         start: "top bottom",
-    //     }
-    // });
 
     gsap.from(".animate h3, .animate p", {
         x: 100,
