@@ -43,7 +43,6 @@ section{
 
 
 h1, h2, h3{
-
     font-family: "unbounded";
     font-weight: bold;
     color: var(--primary);
@@ -62,19 +61,23 @@ h2{
 }
 
 h2.lg{
-    // temporary value
     font-size: 40px;
     line-height: 40px;
 }
-
 
 
 ul{
     list-style: none;
 }
 
+
 .btn, .iconBtn{
     border: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
 }
 
 
@@ -99,7 +102,7 @@ a.btn {
 }
 
 .iconBtn{
-    width: auto;
+    width: auto ;
     height: auto;
     background: none;
 }
@@ -135,43 +138,46 @@ i{
     min-width: 30px;
     min-height: 20px;
 
+    &.arrow{
+        background-image: url("/assets/icons/arrow.svg");
+    }
 
-    &.brandIdentity{
-        background-image: url("/assets/icons/brand\ identity.svg");
-    }
-    &.socialMedia{
-        background-image: url("/assets/icons/social\ media\ marketing.svg");
-    }
+    // &.brandIdentity{
+    //     background-image: url("/assets/icons/brand\ identity.svg");
+    // }
+    // &.socialMedia{
+    //     background-image: url("/assets/icons/social\ media\ marketing.svg");
+    // }
     &.navMenu{
         background-image: url("/assets/icons/nav\ menu.svg");
     }
-    &.contentCreation{
-        background-image: url("/assets/icons/");
-    }
-    &.digitalAdvertising{
-        background-image: url("/assets/icons/digital\ advertising.svg");
-    }
-    &.seo{
-        background-image: url("/assets/icons/search\ engine\ optimization\(seo\).svg");
-    }
-    &.sem{
-        background-image: url("/assets/icons/search\ engine\ marketing.svg");
-    }
-    &.contentCreation{
-        background-image: url("/assets/icons/content\ creation.svg");
-    }
-    &.webDesign{
-        background-image: url("/assets/icons/website\ development.svg");
-    }
-    &.graphicDesign{
-        background-image: url("/assets/icons/graphic\ design.svg");
-    }
-    &.ooh{
-        background-image: url("/assets/icons/out\ of\ home\ advertising\ \(OOH\).svg");
-    }
-    &.printAdvertising{
-        background-image: url("/assets/icons/print\ advertising.svg");
-    }
+    // &.contentCreation{
+    //     background-image: url("/assets/icons/");
+    // }
+    // &.digitalAdvertising{
+    //     background-image: url("/assets/icons/digital\ advertising.svg");
+    // }
+    // &.seo{
+    //     background-image: url("/assets/icons/search\ engine\ optimization\(seo\).svg");
+    // }
+    // &.sem{
+    //     background-image: url("/assets/icons/search\ engine\ marketing.svg");
+    // }
+    // &.contentCreation{
+    //     background-image: url("/assets/icons/content\ creation.svg");
+    // }
+    // &.webDesign{
+    //     background-image: url("/assets/icons/website\ development.svg");
+    // }
+    // &.graphicDesign{
+    //     background-image: url("/assets/icons/graphic\ design.svg");
+    // }
+    // &.ooh{
+    //     background-image: url("/assets/icons/out\ of\ home\ advertising\ \(OOH\).svg");
+    // }
+    // &.printAdvertising{
+    //     background-image: url("/assets/icons/print\ advertising.svg");
+    // }
 
 }
 
@@ -179,19 +185,16 @@ h1{
 
     position: relative;
     z-index: -1;
-    .spiral{
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        // top: -80%;
-        // left: 50%;
-        // transform: translateX(-250%);
-        top: -35%;
-        left: 50%;
-        transform: translateX(-150%);
+    // .spiral{
+    //     width: 100px;
+    //     height: 100px;
+    //     position: absolute;
+    //     top: -35%;
+    //     left: 50%;
+    //     transform: translateX(-150%);
 
-        z-index: -1;
-    }
+    //     z-index: -1;
+    // }
 }
 
 img{
@@ -339,6 +342,7 @@ form{
 
 #heroSection{
 
+    min-height: 800px;
     padding:
         150px // @spacing: body and section,
         var(--body-spacing)
@@ -346,6 +350,12 @@ form{
         var(--body-spacing);
 
     border-bottom: var(--border-primary);
+    p{
+        text-align: left;
+        max-width: 600px;
+        margin: auto;
+    }
+    
 
     > .intro{
         text-align: center;
@@ -406,9 +416,19 @@ z-index: -1;
 
     // animation final properties
     background: var(--primary);
-    h2{
+    h2, h3{
         color: var(--white);
     }
+
+    h3{
+        font-size: 25px;
+        text-align: left;
+        margin: 30px 0 10px 0;
+        border-bottom: var(--border-secondary);
+        width: fit-content;
+        padding-bottom: 10px;
+    }
+
     color: var(--white);
     
 }
@@ -428,6 +448,7 @@ z-index: -1;
     }
 
     .card{
+        cursor: pointer;
         h3, h4{
             margin-bottom: 20px;
         }
@@ -453,13 +474,37 @@ z-index: -1;
             margin-bottom: 100px;
         }
 
+        position: relative;
+    }
+
+    .iconBtn{
+        width: 35px;
+        height: 35px;
+        background: var(--secondary);
+        border-radius: 50%;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    i{
+        vertical-align: bottom;
+        min-width: 20px;
     }
 
 }
 
+div.swiper-wrapper{
+    width: 600px;
+    height: 250px;
+    text-align: center;
+    h3{
+        text-align: center !important;
+    }
+}
+
 // Services section
 #services ul{
-    // max-width: 400px;
     margin: auto;
 
 
@@ -475,7 +520,6 @@ z-index: -1;
 
 // @element: <div class=slider>
 .slider{
-
 
     // @component: service
     li{
@@ -528,42 +572,30 @@ z-index: -1;
     h3{
         font: 14px "Poppins", Arial;
         margin-bottom: 10px;
-        margin-top: 50px;
         text-align: left;
 
     }
-    P::before{
-        display: inline-block;
-        content: "";
-        background: var(--secondary);
-        width: 10px;
-        height: 3px;
-        margin-right: 10px;
-        vertical-align: middle;
-    }
+
     p{
         font: 18px "poppins", Arial;
         font-weight: bold;
         margin-bottom: 10px;
-        // text-align: center;
     }
-
-    // .flex{
-    //     gap: 50px;
-    //     justify-content: center;
-    //     overflow: hidden;
-    // }
 
 
 
 }
 
 .slide{
-    max-width: fit-content;
+    // max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
 
+.swiper-pagination{
+    // position: static;
+    // bottom: ;
+}
 
 // contact us
 #contactUs{
@@ -622,6 +654,9 @@ z-index: -1;
 
     li:not(li:last-child){
         margin-bottom: 10px;
+    }
+    ul{
+        
     }
 }
 .copyright{

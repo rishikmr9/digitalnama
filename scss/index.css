@@ -33,6 +33,7 @@ section {
 
 h1, h2, h3 {
   font-family: "unbounded";
+  font-weight: bold;
   color: var(--primary);
   text-align: center;
   margin-bottom: 40px;
@@ -58,6 +59,11 @@ ul {
 
 .btn, .iconBtn {
   border: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
 }
 
 a.btn {
@@ -112,54 +118,15 @@ i {
   min-width: 30px;
   min-height: 20px;
 }
-i.brandIdentity {
-  background-image: url("/assets/icons/brand identity.svg");
-}
-i.socialMedia {
-  background-image: url("/assets/icons/social media marketing.svg");
+i.arrow {
+  background-image: url("/assets/icons/arrow.svg");
 }
 i.navMenu {
   background-image: url("/assets/icons/nav menu.svg");
 }
-i.contentCreation {
-  background-image: url("/assets/icons/");
-}
-i.digitalAdvertising {
-  background-image: url("/assets/icons/digital advertising.svg");
-}
-i.seo {
-  background-image: url("/assets/icons/search engine optimization(seo).svg");
-}
-i.sem {
-  background-image: url("/assets/icons/search engine marketing.svg");
-}
-i.contentCreation {
-  background-image: url("/assets/icons/content creation.svg");
-}
-i.webDesign {
-  background-image: url("/assets/icons/website development.svg");
-}
-i.graphicDesign {
-  background-image: url("/assets/icons/graphic design.svg");
-}
-i.ooh {
-  background-image: url("/assets/icons/out of home advertising (OOH).svg");
-}
-i.printAdvertising {
-  background-image: url("/assets/icons/print advertising.svg");
-}
 
 h1 {
   position: relative;
-  z-index: -1;
-}
-h1 .spiral {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: -35%;
-  left: 50%;
-  transform: translateX(-150%);
   z-index: -1;
 }
 
@@ -276,8 +243,14 @@ form > label {
 }
 
 #heroSection {
+  min-height: 800px;
   padding: 150px var(--body-spacing) 100px var(--body-spacing);
   border-bottom: var(--border-primary);
+}
+#heroSection p {
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
 }
 #heroSection > .intro {
   text-align: center;
@@ -320,8 +293,17 @@ form > label {
   margin: 20px 0 20px 20px;
   background: var(--secondary);
 }
-#aboutUs h2 {
+#aboutUs h2, #aboutUs h3 {
   color: var(--white);
+}
+#aboutUs h3 {
+  font-size: 25px;
+  text-align: left;
+  margin: 30px 0 10px 0;
+  border-bottom: var(--border-secondary);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 10px;
 }
 
 #services h3 {
@@ -335,7 +317,9 @@ form > label {
   margin-left: 30px;
 }
 #services .card {
+  cursor: pointer;
   border-bottom: var(--border-secondary);
+  position: relative;
 }
 #services .card h3, #services .card h4 {
   margin-bottom: 20px;
@@ -355,6 +339,29 @@ form > label {
 }
 #services .card:not(:last-child) {
   margin-bottom: 100px;
+}
+#services .iconBtn {
+  width: 35px;
+  height: 35px;
+  background: var(--secondary);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#services i {
+  vertical-align: bottom;
+  min-width: 20px;
+}
+
+div.swiper-wrapper {
+  width: 600px;
+  height: 250px;
+  text-align: center;
+}
+div.swiper-wrapper h3 {
+  text-align: center !important;
 }
 
 #services ul {
@@ -402,17 +409,7 @@ form > label {
 #ourClients h3 {
   font: 14px "Poppins", Arial;
   margin-bottom: 10px;
-  margin-top: 50px;
   text-align: left;
-}
-#ourClients P::before {
-  display: inline-block;
-  content: "";
-  background: var(--secondary);
-  width: 10px;
-  height: 3px;
-  margin-right: 10px;
-  vertical-align: middle;
 }
 #ourClients p {
   font: 18px "poppins", Arial;
@@ -421,8 +418,6 @@ form > label {
 }
 
 .slide {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
@@ -474,7 +469,6 @@ form > label {
 #footer li:not(li:last-child) {
   margin-bottom: 10px;
 }
-
 .copyright {
   font-size: 14px;
 }

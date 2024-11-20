@@ -9,7 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <script src="minified/gsap.min.js"  defer></script>
+    <script src="minified/ScrollTrigger.min.js"  defer></script>
     <script src="script.js"  defer></script>
 
     <title>Digitalnama</title>
@@ -18,7 +23,7 @@
 
     <header id="navBar">
 
-        <p><b style="color: var(--primary);">Digitalnama</b></p>
+        <p><b style="color: var(--primary);">THE BEST ADVERTISING AGENCY</b></p>
 
 
         <button class="openNavMenu iconBtn"><i class="navMenu"></i></button>
@@ -40,21 +45,30 @@
 
             <div class="intro">
                 <!-- spiral svg as <svg> -->
-                <h1> <img class="spiral" src="assets/spiral.svg"> Advertising the world!</h1>
+                <!-- <h1> <img class="spiral" src="/assets/spiral.svg"> Advertising the world!</h1> -->
+                <h1>Digitalnama</h1>
                 <p>
-                    with a wink and a smile,
+                    <b>Advertising the world</b> with a wink and a smile,
                     Making brands shine, not just for a while.
-
-                    We draw your story with colors that pop,
-    `               Designs so real, they’ll make jaws drop.
-
+                    <br>
+                    <br>
                     We draw your story with colors that pop,
                     Designs so real, they’ll make jaws drop.
-
+                    <br>
+                    <br>
+                    
+                    We draw your story with colors that pop,
+                    Designs so real, they’ll make jaws drop.
+                    
+                    <br>
+                    <br>
                     Content so bold, it’ll steal the show,
                     Your brand’s new catchphrase? “Now that's something new!”
+                    
+                    <br>
+                    <br>
 
-                    Let’s get into it,
+                    Let’s get into it, <br>
                     Just real talk & drama,
                     The name is Digitalnama
                 </p>
@@ -88,26 +102,41 @@
             <div class="VLine"></div>
 
 
-            <p>Based in Vadodara with our roots deep in Gujarat, but our reach is Pan-India. We’re the agency that’s
+            <p>Based in <b>Vadodara</b> with our roots deep in <b>Gujarat</b>, but our reach is <b>Pan-India</b>. We’re the agency that’s
                 as passionate about your business as we are about creativity. Whether you’re a startup with big dreams or
                 a powerhouse brand looking to level up, we’re the team you’ve been searching for</p>
 
             <div class="VLine"></div>
 
 
-            <p>At Digitalnama, we believe in building stories that connect, strategies that work, and brands that stand
-                out. SEO? We make sure your brand is always top of mind and top of search. Social media? We create
-                campaigns that not only get attention but keep it. PPC? We turn clicks into conversions. Brand strategy?
+            <p>At <b>Digitalnama</b>, we believe in building <b>stories</b> that connect, <b>strategies</b> that work, and <b>brands</b> that stand
+                out.
+                Brand strategy?
                 Let’s make your business the one everyone talks about.
             </p>
 
-            <div class="VLine"></div>
+            <div class="animate">
 
-
-            <p>We don’t just want to work with you; we want to partner with you. We're not just ticking boxes—we’re
-                creating experiences. Our clients aren’t just numbers to us; they’re family. And we’re here to make sure
-                your brand’s voice isn’t just heard, it’s remembered.
-            </p>
+                <h3>SEO?</h3>
+                <p>We make sure your brand is always top of mind and top of search.</p>
+    
+                <h3>Social Media?</h3>
+                <p>We create campaigns that not only get attention but keep it.</p>
+    
+                <h3>PPC?</h3>
+                <p>We turn clicks into conversions.</p>
+    
+                <h3>Brand strategy?</h3>
+                <p>Let’s make your business the one everyone talks about.</p>
+    
+                <!-- <div class="VLine"></div> -->
+                <br>
+    
+                <p>We don’t just want to work with you; we want to partner with you. We're not just ticking boxes—we’re
+                    creating experiences. Our clients aren’t just numbers to us; they’re family. And we’re here to make sure
+                    your brand’s voice isn’t just heard, it’s remembered.
+                </p>
+            </div>
 
         </section>
 
@@ -118,8 +147,6 @@
         <section id="services">
 
             <h2>Services</h2>
-
-
 
 
             <div class="card">
@@ -169,6 +196,10 @@
 
                 </div>
                 
+                <button class="iconBtn">
+                    <i class="arrow"></i>
+                </button>
+
             </div>
 
 
@@ -227,7 +258,9 @@
 
                 </div>
 
-                
+                <button class="iconBtn">
+                    <i class="arrow"></i>
+                </button>
             </div>
 
 
@@ -285,7 +318,9 @@
 
                 </div>
 
-                
+                <button class="iconBtn">
+                    <i class="arrow"></i>
+                </button>
             </div>
 
 
@@ -345,7 +380,9 @@
 
                 </div>
 
-                
+                <button class="iconBtn">
+                    <i class="arrow"></i>
+                </button>
             </div>
 
 
@@ -404,7 +441,9 @@
                     </p>
 
                 </div>
-                
+                <button class="iconBtn">
+                    <i class="arrow"></i>
+                </button>
             </div>
 
 
@@ -468,7 +507,9 @@
                     </p>
 
                 </div>
-                
+                <button class="iconBtn">
+                    <i class="arrow"></i>
+                </button>
             </div>
 
 
@@ -529,7 +570,9 @@
                     </p>
 
                 </div>
-                
+                <button class="iconBtn">
+                    <i class="arrow"></i>
+                </button>
             </div>
 
 
@@ -596,7 +639,9 @@
                     </p>
 
                 </div>
-                
+                <button class="iconBtn">
+                    <i class="arrow"></i>
+                </button>
             </div>
 
 
@@ -661,7 +706,9 @@
                     </p>
 
                 </div>
-                
+                <button class="iconBtn">
+                    <i class="arrow"></i>
+                </button>
             </div>
 
 
@@ -728,7 +775,9 @@
                     </p>
 
                 </div>
-                
+                <button class="iconBtn">
+                    <i class="arrow"></i>
+                </button>
             </div>
 
         </section>
@@ -742,49 +791,79 @@
 
             <h2>Our Clients</h2>
 
-            <div class="slide">
+            <div class="slide swiper">
 
-                <h3>Retail & E-commerce</h3> 
-                <p>Snowcem</p>
+                <div class="swiper-pagination"></div>
 
-                <h3>Real Estate</h3> 
-                <p>Pramukh Group</p>
-                <p>Samprati Properties</p>
+                <div class="swiper-wrapper">
 
-                <h3>Healthcare & Pharmaceuticals</h3> 
-                <p>Dental</p>
-                <p>Welcare</p>
-                <p>Bijal Parikh</p>
-                <p>Nayasan Home Healthcare</p>
+                    <div class="swiper-slide">
+                    <h3>Retail & E-commerce</h3> 
+                        <p>Snowcem</p>
+                    </div>
+    
+                    <div class="swiper-slide">
+                    <h3>Real Estate</h3> 
+                        <p>Pramukh Group</p>
+                        <p>Samprati Properties</p>
+                    </div>
+    
+                    <div class="swiper-slide">
+                    <h3>Healthcare & Pharmaceuticals</h3> 
+                        <p>Dental</p>
+                        <p>Welcare</p>
+                        <p>Bijal Parikh</p>
+                        <p>Nayasan Home Healthcare</p>
+                    </div>
+    
+                    <div class="swiper-slide">
+                    <h3>Education</h3> 
+                        <p>DA-IICT</p>
+                        <p>KIRC</p>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                    <h3>Hospitality & Tourism</h3>
+                        <p>Starz</p>
+                    </div>
+    
+                    <div class="swiper-slide">
+                    <h3>Automotive</h3>
+                        <p>KP Automotives</p>
+                    </div>
+    
+                    <div class="swiper-slide">
+                    <h3>Entertainment & Media</h3>
+                        <p>White Apple</p>
+                    </div>
+    
+                    <div class="swiper-slide">
+                    <h3>Food & Beverage</h3>
+                        <p>Feasti</p>
+                        <p>Breadliner</p>
+                    </div>
+    
+                    <div class="swiper-slide">
+                    <h3>Fashion & Lifestyle</h3>
+                        <p>Paneri</p>
+                        <p>HOH</p>
+                        <p>Kami Kubi</p>
+                    </div>
+    
+                    <div class="swiper-slide">
+                    <h3>Finance & Insurance</h3>
+                        <p>Bullspree</p>
+                    </div>
+    
+                    <div class="swiper-slide">
+                    <h3>FMCG</h3>
+                        <p>Rajani</p>
+                        <p>Kitchen Xpress</p>
+                    </div>
 
-                <h3>Education</h3> 
-                <p>DA-IICT</p>
-                <p>KIRC</p>
+                </div>
 
-                <h3>Hospitality & Tourism</h3>
-                <p>Starz</p>
 
-                <h3>Automotive</h3>
-                <p>KP Automotives</p>
-
-                <h3>Entertainment & Media</h3>
-                <p>White Apple</p>
-
-                <h3>Food & Beverage</h3>
-                <p>Feasti</p>
-                <p>Breadliner</p>
-
-                <h3>Fashion & Lifestyle</h3>
-                <p>Paneri</p>
-                <p>HOH</p>
-                <p>Kami Kubi</p>
-
-                <h3>Finance & Insurance</h3>
-                <p>Bullspree</p>
-
-                <h3>FMCG</h3>
-                <p>Rajani</p>
-                <p>Kitchen Xpress</p>
 
             </div>
 
@@ -799,7 +878,7 @@
         <section id="contactUs">
 
             <h2 class="lg">
-                let's collaborate & make some noise!
+                Let's collaborate & make some noise!
 
             </h2>
 
@@ -823,14 +902,13 @@
 
         <div class="flex">
     
-    
             <div>
                 <h2>Follow Us</h2>
                 <ul>
-                    <li>instagram</li>
-                    <li>facebook</li>
-                    <li>linkedin</li>
-                    <li>twitter</li>
+                    <li><a href="https://www.linkedin.com/company/digitalnama/">Linkedin</a></li>
+                    <li><a href="https://www.instagram.com/_digitalnama_/profilecard/?igsh=MTBucmxwc2g4bW5iaw==">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/share/19UGcXifYy/?mibextid=LQQJ4d">Facebook</a></li>
+                    <li><a href="https://www.threads.net/@_digitalnama_">Threads</a></li>
                 </ul>
             </div>
 
